@@ -10,26 +10,33 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-#appetizers {
-  width: 300px;
+$main-color: purple;
+
+img {
   border: 1px solid black;
+
+  &#appetizers {
+    width: 200px;
+  }
+
+  &#entrees {
+    width: 200px;
+  }
+
+  &#dessert {
+    width: 200px;
+  }
+
+  &#adult_beverages {
+    width: 200px;
+    padding: 10px
+  }
 }
 
-#entrees {
-  width: 300px;
-  border: 1px solid black;
-}
-
-#dessert {
-  width: 300px;
-  border: 1px solid black;
-}
-
-#adult_beverages {
-  width: 300px;
-  border: 1px solid black;
+th {
+  color: $main-color;
 }
