@@ -14,7 +14,22 @@
  *= require_self
  */
 
-img {
+#appetizers {
+  width: 300px;
+  border: 1px solid black;
+}
+
+#entrees {
+  width: 300px;
+  border: 1px solid black;
+}
+
+#dessert {
+  width: 300px;
+  border: 1px solid black;
+}
+
+#adult_beverages {
   width: 300px;
   border: 1px solid black;
 }
